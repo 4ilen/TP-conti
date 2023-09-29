@@ -1,0 +1,15 @@
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\bin\Debug\DAL.dll.config
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\bin\Debug\DAL.dll
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\bin\Debug\DAL.pdb
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\bin\Debug\Domain.dll
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\bin\Debug\Domain.pdb
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\bin\Debug\Domain.dll.config
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\obj\Debug\DAL.dll
+C:\Users\Diego\Downloads\OpciónDiseño\DAL\obj\Debug\DAL.pdb

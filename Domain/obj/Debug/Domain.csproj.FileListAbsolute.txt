@@ -1,0 +1,12 @@
+C:\Users\Diego\Downloads\OpciónDiseño\Domain\bin\Debug\Domain.dll.config
+C:\Users\Diego\Downloads\OpciónDiseño\Domain\bin\Debug\Domain.dll
+C:\Users\Diego\Downloads\OpciónDiseño\Domain\bin\Debug\Domain.pdb
+C:\Users\Diego\Downloads\OpciónDiseño\Domain\bin\Debug\EntityFramework.dll
+C:\Users\Diego\Downloads\OpciónDiseño\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Diego\Downloads\OpciónDiseño\Domain\bin\Debug\EntityFramework.xml
+C:\Users\Diego\Downloads\OpciónDiseño\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Diego\Downloads\OpciónDiseño\Domain\obj\Debug\Domain.csproj.AssemblyReference.cache
+C:\Users\Diego\Downloads\OpciónDiseño\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Downloads\OpciónDiseño\Domain\obj\Debug\Domain.csproj.CopyComplete
+C:\Users\Diego\Downloads\OpciónDiseño\Domain\obj\Debug\Domain.dll
+C:\Users\Diego\Downloads\OpciónDiseño\Domain\obj\Debug\Domain.pdb

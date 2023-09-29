@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="masterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Alquiler">
+    <Key>
+      <PropertyRef Name="ID_ALQUILER" />
+    </Key>
+    <Property Name="ID_ALQUILER" Type="Int32" Nullable="false" />
+    <Property Name="FECHA_INICIO" Type="DateTime" Precision="0" />
+    <Property Name="FECHA_DEVOLUCION" Type="DateTime" Precision="0" />
+    <Property Name="CODIGO" Type="Int32" />
+    <Property Name="ID_DETALLE_ALQUILER" Type="Int32" />
+    <NavigationProperty Name="DETALLE_ALQUILER" Relationship="Self.FK__Alquiler__ID_DET__47FBA9D6" FromRole="Alquiler" ToRole="DETALLE_ALQUILER" />
+  </EntityType>
+  <EntityType Name="AUTOR">
+    <Key>
+      <PropertyRef Name="ID_AUTOR" />
+    </Key>
+    <Property Name="ID_AUTOR" Type="Int32" Nullable="false" />
+    <Property Name="NOMBRE_AUTOR" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="APELLIDO_AUTOR" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="LIBRO" Relationship="Self.FK__LIBRO__ID_AUTOR___3F6663D5" FromRole="AUTOR" ToRole="LIBRO" />
+  </EntityType>
+  <EntityType Name="CLIENTE">
+    <Key>
+      <PropertyRef Name="ID_CLIENTE" />
+    </Key>
+    <Property Name="ID_CLIENTE" Type="Int32" Nullable="false" />
+    <Property Name="NOMBRE_CLIENTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="APELLIDO_CLIENTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONO_CLIENTE" Type="Int32" />
+    <Property Name="DIRECCION_CLIENTE" Type="Double" />
+    <NavigationProperty Name="DETALLE_ALQUILER" Relationship="Self.FK__DETALLE_A__ID_CL__451F3D2B" FromRole="CLIENTE" ToRole="DETALLE_ALQUILER" />
+  </EntityType>
+  <EntityType Name="DETALLE_ALQUILER">
+    <Key>
+      <PropertyRef Name="ID_DETALLE_ALQUILER" />
+    </Key>
+    <Property Name="ID_DETALLE_ALQUILER" Type="Int32" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="ID_MONTO_PAGO" Type="Int32" />
+    <Property Name="ID_LIBRO" Type="Int32" />
+    <Property Name="ID_CLIENTE" Type="Int32" />
+    <NavigationProperty Name="Alquiler" Relationship="Self.FK__Alquiler__ID_DET__47FBA9D6" FromRole="DETALLE_ALQUILER" ToRole="Alquiler" />
+    <NavigationProperty Name="CLIENTE" Relationship="Self.FK__DETALLE_A__ID_CL__451F3D2B" FromRole="DETALLE_ALQUILER" ToRole="CLIENTE" />
+    <NavigationProperty Name="MONTO_PAGO" Relationship="Self.FK__DETALLE_A__ID_MO__442B18F2" FromRole="DETALLE_ALQUILER" ToRole="MONTO_PAGO" />
+  </EntityType>
+  <EntityType Name="EDITORIAL">
+    <Key>
+      <PropertyRef Name="ID_EDITORIAL" />
+    </Key>
+    <Property Name="ID_EDITORIAL" Type="Int32" Nullable="false" />
+    <Property Name="NOMBRE_EDITORIAL" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="LIBRO" Relationship="Self.FK__LIBRO__ID_EDITOR__3E723F9C" FromRole="EDITORIAL" ToRole="LIBRO" />
+  </EntityType>
+  <EntityType Name="LIBRO">
+    <Key>
+      <PropertyRef Name="ID_LIBRO" />
+    </Key>
+    <Property Name="ID_LIBRO" Type="Int32" Nullable="false" />
+    <Property Name="ANO_LIBRO" Type="Int32" />
+    <Property Name="ESTADO_LIBRO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="NOMBRE_LIBRO" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="ID_EDITORIAL_LIBRO" Type="Int32" />
+    <Property Name="ID_AUTOR_LIBRO" Type="Int32" />
+    <NavigationProperty Name="AUTOR" Relationship="Self.FK__LIBRO__ID_AUTOR___3F6663D5" FromRole="LIBRO" ToRole="AUTOR" />
+    <NavigationProperty Name="EDITORIAL" Relationship="Self.FK__LIBRO__ID_EDITOR__3E723F9C" FromRole="LIBRO" ToRole="EDITORIAL" />
+  </EntityType>
+  <EntityType Name="MONTO_PAGO">
+    <Key>
+      <PropertyRef Name="ID_MONTO_PAGO" />
+    </Key>
+    <Property Name="ID_MONTO_PAGO" Type="Int32" Nullable="false" />
+    <Property Name="FECHA_MONTO_PAGO" Type="DateTime" Precision="0" />
+    <Property Name="MONTO_PAGO1" Type="Int32" />
+    <NavigationProperty Name="DETALLE_ALQUILER" Relationship="Self.FK__DETALLE_A__ID_MO__442B18F2" FromRole="MONTO_PAGO" ToRole="DETALLE_ALQUILER" />
+  </EntityType>
+  <Association Name="FK__Alquiler__ID_DET__47FBA9D6">
+    <End Role="DETALLE_ALQUILER" Type="Self.DETALLE_ALQUILER" Multiplicity="0..1" />
+    <End Role="Alquiler" Type="Self.Alquiler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DETALLE_ALQUILER">
+        <PropertyRef Name="ID_DETALLE_ALQUILER" />
+      </Principal>
+      <Dependent Role="Alquiler">
+        <PropertyRef Name="ID_DETALLE_ALQUILER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LIBRO__ID_AUTOR___3F6663D5">
+    <End Role="AUTOR" Type="Self.AUTOR" Multiplicity="0..1" />
+    <End Role="LIBRO" Type="Self.LIBRO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AUTOR">
+        <PropertyRef Name="ID_AUTOR" />
+      </Principal>
+      <Dependent Role="LIBRO">
+        <PropertyRef Name="ID_AUTOR_LIBRO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DETALLE_A__ID_CL__451F3D2B">
+    <End Role="CLIENTE" Type="Self.CLIENTE" Multiplicity="0..1" />
+    <End Role="DETALLE_ALQUILER" Type="Self.DETALLE_ALQUILER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTE">
+        <PropertyRef Name="ID_CLIENTE" />
+      </Principal>
+      <Dependent Role="DETALLE_ALQUILER">
+        <PropertyRef Name="ID_CLIENTE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DETALLE_A__ID_MO__442B18F2">
+    <End Role="MONTO_PAGO" Type="Self.MONTO_PAGO" Multiplicity="0..1" />
+    <End Role="DETALLE_ALQUILER" Type="Self.DETALLE_ALQUILER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MONTO_PAGO">
+        <PropertyRef Name="ID_MONTO_PAGO" />
+      </Principal>
+      <Dependent Role="DETALLE_ALQUILER">
+        <PropertyRef Name="ID_MONTO_PAGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LIBRO__ID_EDITOR__3E723F9C">
+    <End Role="EDITORIAL" Type="Self.EDITORIAL" Multiplicity="0..1" />
+    <End Role="LIBRO" Type="Self.LIBRO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EDITORIAL">
+        <PropertyRef Name="ID_EDITORIAL" />
+      </Principal>
+      <Dependent Role="LIBRO">
+        <PropertyRef Name="ID_EDITORIAL_LIBRO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entity2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alquiler" EntityType="Self.Alquiler" />
+    <EntitySet Name="AUTOR" EntityType="Self.AUTOR" />
+    <EntitySet Name="CLIENTE" EntityType="Self.CLIENTE" />
+    <EntitySet Name="DETALLE_ALQUILER" EntityType="Self.DETALLE_ALQUILER" />
+    <EntitySet Name="EDITORIAL" EntityType="Self.EDITORIAL" />
+    <EntitySet Name="LIBRO" EntityType="Self.LIBRO" />
+    <EntitySet Name="MONTO_PAGO" EntityType="Self.MONTO_PAGO" />
+    <AssociationSet Name="FK__Alquiler__ID_DET__47FBA9D6" Association="Self.FK__Alquiler__ID_DET__47FBA9D6">
+      <End Role="DETALLE_ALQUILER" EntitySet="DETALLE_ALQUILER" />
+      <End Role="Alquiler" EntitySet="Alquiler" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LIBRO__ID_AUTOR___3F6663D5" Association="Self.FK__LIBRO__ID_AUTOR___3F6663D5">
+      <End Role="AUTOR" EntitySet="AUTOR" />
+      <End Role="LIBRO" EntitySet="LIBRO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DETALLE_A__ID_CL__451F3D2B" Association="Self.FK__DETALLE_A__ID_CL__451F3D2B">
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+      <End Role="DETALLE_ALQUILER" EntitySet="DETALLE_ALQUILER" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DETALLE_A__ID_MO__442B18F2" Association="Self.FK__DETALLE_A__ID_MO__442B18F2">
+      <End Role="MONTO_PAGO" EntitySet="MONTO_PAGO" />
+      <End Role="DETALLE_ALQUILER" EntitySet="DETALLE_ALQUILER" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LIBRO__ID_EDITOR__3E723F9C" Association="Self.FK__LIBRO__ID_EDITOR__3E723F9C">
+      <End Role="EDITORIAL" EntitySet="EDITORIAL" />
+      <End Role="LIBRO" EntitySet="LIBRO" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

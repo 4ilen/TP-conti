@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TP_TCModelStoreContainer" CdmEntityContainer="TP_TCEntities">
+    <EntitySetMapping Name="Alquiler">
+      <EntityTypeMapping TypeName="TP_TCModel.Alquiler">
+        <MappingFragment StoreEntitySet="Alquiler">
+          <ScalarProperty Name="ID_ALQUILER" ColumnName="ID_ALQUILER" />
+          <ScalarProperty Name="FECHA_INICIO" ColumnName="FECHA_INICIO" />
+          <ScalarProperty Name="FECHA_DEVOLUCION" ColumnName="FECHA_DEVOLUCION" />
+          <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+          <ScalarProperty Name="ID_DETALLE_ALQUILER" ColumnName="ID_DETALLE_ALQUILER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUTOR">
+      <EntityTypeMapping TypeName="TP_TCModel.AUTOR">
+        <MappingFragment StoreEntitySet="AUTOR">
+          <ScalarProperty Name="ID_AUTOR" ColumnName="ID_AUTOR" />
+          <ScalarProperty Name="NOMBRE_AUTOR" ColumnName="NOMBRE_AUTOR" />
+          <ScalarProperty Name="APELLIDO_AUTOR" ColumnName="APELLIDO_AUTOR" />
+          <ScalarProperty Name="ANO_NACIMIENTO" ColumnName="ANO_NACIMIENTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTE">
+      <EntityTypeMapping TypeName="TP_TCModel.CLIENTE">
+        <MappingFragment StoreEntitySet="CLIENTE">
+          <ScalarProperty Name="ID_CLIENTE" ColumnName="ID_CLIENTE" />
+          <ScalarProperty Name="NOMBRE_CLIENTE" ColumnName="NOMBRE_CLIENTE" />
+          <ScalarProperty Name="APELLIDO_CLIENTE" ColumnName="APELLIDO_CLIENTE" />
+          <ScalarProperty Name="CORREO_CLIENTE" ColumnName="CORREO_CLIENTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_ALQUILER">
+      <EntityTypeMapping TypeName="TP_TCModel.DETALLE_ALQUILER">
+        <MappingFragment StoreEntitySet="DETALLE_ALQUILER">
+          <ScalarProperty Name="ID_DETALLE_ALQUILER" ColumnName="ID_DETALLE_ALQUILER" />
+          <ScalarProperty Name="ID_MONTO_PAGO" ColumnName="ID_MONTO_PAGO" />
+          <ScalarProperty Name="ID_LIBRO" ColumnName="ID_LIBRO" />
+          <ScalarProperty Name="ID_CLIENTE" ColumnName="ID_CLIENTE" />
+          <ScalarProperty Name="FECHA_INICIO" ColumnName="FECHA_INICIO" />
+          <ScalarProperty Name="FECHA_FIN" ColumnName="FECHA_FIN" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EDITORIAL">
+      <EntityTypeMapping TypeName="TP_TCModel.EDITORIAL">
+        <MappingFragment StoreEntitySet="EDITORIAL">
+          <ScalarProperty Name="ID_EDITORIAL" ColumnName="ID_EDITORIAL" />
+          <ScalarProperty Name="NOMBRE_EDITORIAL" ColumnName="NOMBRE_EDITORIAL" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="PAIS" ColumnName="PAIS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LIBRO">
+      <EntityTypeMapping TypeName="TP_TCModel.LIBRO">
+        <MappingFragment StoreEntitySet="LIBRO">
+          <ScalarProperty Name="ID_LIBRO" ColumnName="ID_LIBRO" />
+          <ScalarProperty Name="ANO_LIBRO" ColumnName="ANO_LIBRO" />
+          <ScalarProperty Name="ESTADO_LIBRO" ColumnName="ESTADO_LIBRO" />
+          <ScalarProperty Name="TITULO_LIBRO" ColumnName="TITULO_LIBRO" />
+          <ScalarProperty Name="CONTENIDO" ColumnName="CONTENIDO" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="ID_EDITORIAL_LIBRO" ColumnName="ID_EDITORIAL_LIBRO" />
+          <ScalarProperty Name="ID_AUTOR_LIBRO" ColumnName="ID_AUTOR_LIBRO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MONTO_PAGO">
+      <EntityTypeMapping TypeName="TP_TCModel.MONTO_PAGO">
+        <MappingFragment StoreEntitySet="MONTO_PAGO">
+          <ScalarProperty Name="ID_MONTO_PAGO" ColumnName="ID_MONTO_PAGO" />
+          <ScalarProperty Name="FECHA_MONTO_PAGO" ColumnName="FECHA_MONTO_PAGO" />
+          <ScalarProperty Name="MONTO_PAGO1" ColumnName="MONTO_PAGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

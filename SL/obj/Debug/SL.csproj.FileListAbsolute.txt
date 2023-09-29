@@ -1,0 +1,6 @@
+C:\Users\Diego\Downloads\OpciónDiseño\SL\bin\Debug\SL.dll
+C:\Users\Diego\Downloads\OpciónDiseño\SL\bin\Debug\SL.pdb
+C:\Users\Diego\Downloads\OpciónDiseño\SL\obj\Debug\SL.csproj.AssemblyReference.cache
+C:\Users\Diego\Downloads\OpciónDiseño\SL\obj\Debug\SL.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Downloads\OpciónDiseño\SL\obj\Debug\SL.dll
+C:\Users\Diego\Downloads\OpciónDiseño\SL\obj\Debug\SL.pdb

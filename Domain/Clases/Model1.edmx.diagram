@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3c688812e99e4cd7b82962b7a59a4769" Name="Diagram1">
+        <EntityTypeShape EntityType="TP_TCModel.Alquiler" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TP_TCModel.AUTOR" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TP_TCModel.CLIENTE" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TP_TCModel.DETALLE_ALQUILER" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TP_TCModel.EDITORIAL" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TP_TCModel.LIBRO" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TP_TCModel.MONTO_PAGO" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <AssociationConnector Association="TP_TCModel.FK__Alquiler__ID_DET__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="TP_TCModel.FK__LIBRO__ID_AUTOR___6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="TP_TCModel.FK__DETALLE_A__ID_CL__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="TP_TCModel.FK__DETALLE_A__ID_LI__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="TP_TCModel.FK__DETALLE_A__ID_MO__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="TP_TCModel.FK__LIBRO__ID_EDITOR__6C190EBB" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

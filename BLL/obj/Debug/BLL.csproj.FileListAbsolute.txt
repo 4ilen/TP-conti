@@ -1,0 +1,17 @@
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\bin\Debug\BLL.dll
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\bin\Debug\BLL.pdb
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\bin\Debug\DAL.dll
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\bin\Debug\Domain.dll
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\bin\Debug\SL.dll
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\bin\Debug\DAL.pdb
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\bin\Debug\DAL.dll.config
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\bin\Debug\Domain.pdb
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\bin\Debug\Domain.dll.config
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\bin\Debug\SL.pdb
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\obj\Debug\BLL.dll
+C:\Users\Diego\Downloads\OpciónDiseño\BLL\obj\Debug\BLL.pdb
